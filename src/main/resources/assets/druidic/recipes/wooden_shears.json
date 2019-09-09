@@ -1,0 +1,30 @@
+{
+    "type": "forge:ore_shaped",
+    
+    "pattern":
+    [
+        "P  ",
+        "SP ",
+        "   "
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "ore": "plankWood",
+            "type": "forge:ore_dict"
+        },
+        
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "druidic:wooden_shears",
+        "count": 1
+    }
+}

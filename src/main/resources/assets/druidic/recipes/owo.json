@@ -1,0 +1,18 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "druidic:owo_block"
+    }
+
+    ],
+
+    "result": 
+    {
+        "item": "druidic:owo",
+        "count": 9
+    }
+}

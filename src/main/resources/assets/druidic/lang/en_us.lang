@@ -1,0 +1,37 @@
+//Items
+item.owo.name=OwO
+item.ancient_seeds.name=Ancient Seeds
+item.amber.name=Amber
+item.citrine.name=Citrine
+item.agate.name=Agate
+item.onyx.name=Onyx
+item.sapphire.name=Sapphire
+item.opal.name=Opal
+item.moonstone.name=Moonstone
+item.sunstone.name=Sunstone
+
+//Tools
+item.owo_sword.name=OwO Sword
+item.grass_sword.name=Grass Sword
+item.grass_pickaxe.name=Grass Pickaxe
+item.grass_axe.name=Grass Axe
+item.grass_shovel.name=Grass Shovel
+item.grass_hoe.name=Grass Hoe
+item.wooden_shears.name=Wooden Shears
+
+//Armor
+item.druid_robe.name=Druid Robe
+
+//Blocks
+tile.owo_block.name=OwO Block
+tile.amber_ore.name=Amber Ore
+tile.citrine_ore.name=Citrine Ore
+tile.agate_ore.name=Agate Ore
+tile.onyx_ore.name=Onyx Ore
+tile.sapphire_ore.name=Sapphire Ore
+tile.opal_ore.name=Opal Ore
+tile.sunstone_ore.name=Sunstone Ore
+tile.moonstone_ore.name=Moonstone Ore
+
+//Entities
+entity.deer.name=Deer

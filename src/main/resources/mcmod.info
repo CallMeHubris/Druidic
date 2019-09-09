@@ -1,0 +1,16 @@
+[
+{
+  "modid": "druidic",
+  "name": "Druidic",
+  "description": "A mod focused on adding druidic magic (including shapeshifting!)",
+  "version": "Beta 1.0",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["CallMeHubris"],
+  "credits": "My deer boyfriend",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
