@@ -2,6 +2,7 @@
 item.owo.name=OwO
 item.ancient_seeds.name=Ancient Seeds
 item.amber.name=Amber
+item.carnelian.name=Carnelian
 item.citrine.name=Citrine
 item.agate.name=Agate
 item.onyx.name=Onyx
@@ -25,6 +26,7 @@ item.druid_robe.name=Druid Robe
 //Blocks
 tile.owo_block.name=OwO Block
 tile.amber_ore.name=Amber Ore
+tile.carnelian_ore.name=Carnelian Ore
 tile.citrine_ore.name=Citrine Ore
 tile.agate_ore.name=Agate Ore
 tile.onyx_ore.name=Onyx Ore
@@ -32,6 +34,7 @@ tile.sapphire_ore.name=Sapphire Ore
 tile.opal_ore.name=Opal Ore
 tile.sunstone_ore.name=Sunstone Ore
 tile.moonstone_ore.name=Moonstone Ore
+tile.altar.name=Altar
 
 //Entities
 entity.deer.name=Deer
