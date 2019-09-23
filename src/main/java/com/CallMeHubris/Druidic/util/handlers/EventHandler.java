@@ -23,39 +23,25 @@ import net.minecraft.block.BlockTallGrass;
 @Mod.EventBusSubscriber
 public class EventHandler 
 {
-	/*
+	
 	@SubscribeEvent
 	public static void blockHarvest(HarvestDropsEvent event)
 	{
-		System.out.println("Block Harvested");
-		if(!event.isSilkTouching())
+		if(event.getState().getBlock() == Blocks.TALLGRASS)
 		{
+			//The drop rate of ancient seeds varies depending on if the grass broken was a normal
+			//	tall grass block or a fern
 			if(event.getState() == Blocks.TALLGRASS.getDefaultState().withProperty(BlockTallGrass.TYPE, BlockTallGrass.EnumType.GRASS))
 			{
-				event.setDropChance(0.05f);
 				event.getDrops().add(new ItemStack(ModItems.ANCIENT_SEEDS, 1));
+				event.setDropChance(0.01f + (0.3f * event.getFortuneLevel()));
 			}
-			else
+			else if(event.getState() == Blocks.TALLGRASS.getDefaultState().withProperty(BlockTallGrass.TYPE, BlockTallGrass.EnumType.FERN))
 			{
-				System.out.println("Grass not found");
+				event.getDrops().add(new ItemStack(ModItems.ANCIENT_SEEDS, 1));
+				event.setDropChance(0.05f + (0.5f * event.getFortuneLevel()));
 			}
-		}
+		}	
 	}
-	*/
 	
-	@SubscribeEvent
-	public static void modifyLootTables(LootTableLoadEvent event)
-	{
-		if(event.getName() == Blocks.TALLGRASS.getRegistryName())
-		{
-			LootEntry entry = new LootEntryItem(ModItems.ANCIENT_SEEDS, 1, 1, null, null, "ancient_seeds");
-			
-			List<LootEntry> entriesIn = new ArrayList<LootEntry>();
-			entriesIn.add(entry);
-			
-			LootPool pool = new LootPool((LootEntry[])entriesIn.toArray(), null, new RandomValueRange(1.0f), new RandomValueRange(0.0f), "druidicPool");
-			event.getTable().addPool(pool);
-		}
-		
-	}
 }
